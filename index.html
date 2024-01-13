@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>富源建材（丁达尔墙板）</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Icon fonts-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Lightbox CSS-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- Leaflet CSS-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/logo.png">
+    <script src="js/language.js"></script>
+    
+    
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+<style type="text/css">
+*{margin: 0;padding: 0;}
+  #div1{position: relative;border:1px solid #0ff;width:1100px; height: 180px;margin:50px auto 0;overflow: hidden;}
+  #div1 ul{position: absolute;left: 0;}
+  #div1 ul li{list-style: none;width:200px;float: left;padding: 10px;height: 160px;}
+  #div1 ul li img{width:100%;}
+  #div2{position: relative;border:1px solid #0ff;width:1100px; height: 180px;margin:50px auto 0;overflow: hidden;}
+  #div2 ul{position: absolute;left: 0;}
+  #div2 ul li{list-style: none;width:200px;float: left;padding: 10px;height: 160px;}
+  #div2 ul li img{width:100%;}
+  #div3{position: relative;border:1px solid #0ff;width:1100px; height: 180px;margin:50px auto 0;overflow: hidden;}
+  #div3 ul{position: absolute;left: 0;}
+  #div3 ul li{list-style: none;width:200px;float: left;padding: 10px;height: 160px;}
+  #div3 ul li img{width:100%;}
+  #div4{position: relative;border:1px solid #0ff;width:1100px; height: 180px;margin:50px auto 0;overflow: hidden;}
+  #div4 ul{position: absolute;left: 0;}
+  #div4 ul li{list-style: none;width:200px;float: left;padding: 10px;height: 160px;}
+  #div4 ul li img{width:100%;}
+  #div5{position: relative;border:1px solid #0ff;width:1100px; height: 180px;margin:50px auto 0;overflow: hidden;}
+  #div5 ul{position: absolute;left: 0;}
+  #div5 ul li{list-style: none;width:200px;float: left;padding: 10px;height: 160px;}
+  #div5 ul li img{width:100%;}
+</style>
+<script type="text/javascript">
+  window.onload=function(){
+    var oDiv1=document.getElementById('div1');
+    var oUl1=oDiv1.getElementsByTagName('ul')[0];
+    var aLi1=oUl1.getElementsByTagName('li');
+    // var aA=document.getElementsByTagName('a');//获取向右向左的箭头
+    var timer1=null;
+    var iSpeed=-2;
+    oUl1.innerHTML+=oUl1.innerHTML;//定义图片可以循环播放
+    oUl1.style.width=aLi1.length*aLi1[0].offsetWidth+'px';//定义外层ul的宽度，根据图片的个数和每个图片的宽度计算，保证总宽度是可调整的
+    
+    var oDiv2=document.getElementById('div2');
+    var oUl2=oDiv2.getElementsByTagName('ul')[0];
+    var aLi2=oUl2.getElementsByTagName('li');
+    // var aA=document.getElementsByTagName('a');//获取向右向左的箭头
+    var timer2=null;
+    var iSpeed=-2;
+    oUl2.innerHTML+=oUl2.innerHTML;//定义图片可以循环播放
+    oUl2.style.width=aLi2.length*aLi2[0].offsetWidth+'px';//定义外层ul的宽度，根据图片的个数和每个图片的宽度计算，保证总宽度是可调整的
+    
+    var oDiv3=document.getElementById('div3');
+    var oUl3=oDiv3.getElementsByTagName('ul')[0];
+    var aLi3=oUl3.getElementsByTagName('li');
+    // var aA=document.getElementsByTagName('a');//获取向右向左的箭头
+    var timer3=null;
+    var iSpeed=2;
+    oUl3.innerHTML+=oUl3.innerHTML;//定义图片可以循环播放
+    oUl3.style.width=aLi3.length*aLi3[0].offsetWidth+'px';//定义外层ul的宽度，根据图片的个数和每个图片的宽度计算，保证总宽度是可调整的
+
+    var oDiv4=document.getElementById('div4');
+    var oUl4=oDiv4.getElementsByTagName('ul')[0];
+    var aLi4=oUl4.getElementsByTagName('li');
+    // var aA=document.getElementsByTagName('a');//获取向右向左的箭头
+    var timer4=null;
+    var iSpeed=2;
+    oUl4.innerHTML+=oUl4.innerHTML;//定义图片可以循环播放
+    oUl4.style.width=aLi4.length*aLi4[0].offsetWidth+'px';//定义外层ul的宽度，根据图片的个数和每个图片的宽度计算，保证总宽度是可调整的
+
+    var oDiv5=document.getElementById('div5');
+    var oUl5=oDiv5.getElementsByTagName('ul')[0];
+    var aLi5=oUl5.getElementsByTagName('li');
+    // var aA=document.getElementsByTagName('a');//获取向右向左的箭头
+    var timer5=null;
+    var iSpeed=2;
+    oUl5.innerHTML+=oUl5.innerHTML;//定义图片可以循环播放
+    oUl5.style.width=aLi5.length*aLi5[0].offsetWidth+'px';//定义外层ul的宽度，根据图片的个数和每个图片的宽度计算，保证总宽度是可调整的
+    
+    function fnMove1(){
+      if(oUl1.offsetLeft<-oUl1.offsetWidth/2){
+        oUl1.style.left=0;
+      }else if(oUl1.offsetLeft>0){
+        oUl1.style.left=-oUl1.offsetWidth/2+'px';
+      }//定义到边界的时候，实现无缝衔接
+      oUl1.style.left=oUl1.offsetLeft+iSpeed+'px';
+//定义图片的右边距随着速度不断不断增加，或减小，实现运动的效果
+    }
+    function fnMove2(){
+      if(oUl2.offsetLeft<-oUl2.offsetWidth/2){
+        oUl2.style.left=0;
+      }else if(oUl2.offsetLeft>0){
+        oUl2.style.left=-oUl2.offsetWidth/2+'px';
+      }//定义到边界的时候，实现无缝衔接
+      oUl2.style.left=oUl2.offsetLeft+iSpeed+'px';
+//定义图片的右边距随着速度不断不断增加，或减小，实现运动的效果
+    }
+    function fnMove3(){
+      if(oUl3.offsetLeft<-oUl3.offsetWidth/2){
+        oUl3.style.left=0;
+      }else if(oUl3.offsetLeft>0){
+        oUl3.style.left=-oUl3.offsetWidth/2+'px';
+      }//定义到边界的时候，实现无缝衔接
+      oUl3.style.left=oUl3.offsetLeft+iSpeed+'px';
+//定义图片的右边距随着速度不断不断增加，或减小，实现运动的效果
+    }
+    function fnMove4(){
+      if(oUl4.offsetLeft<-oUl4.offsetWidth/2){
+        oUl4.style.left=0;
+      }else if(oUl4.offsetLeft>0){
+        oUl4.style.left=-oUl4.offsetWidth/2+'px';
+      }//定义到边界的时候，实现无缝衔接
+      oUl4.style.left=oUl4.offsetLeft+iSpeed+'px';
+//定义图片的右边距随着速度不断不断增加，或减小，实现运动的效果
+    }
+    function fnMove5(){
+      if(oUl5.offsetLeft<-oUl5.offsetWidth/2){
+        oUl5.style.left=0;
+      }else if(oUl5.offsetLeft>0){
+        oUl5.style.left=-oUl5.offsetWidth/2+'px';
+      }//定义到边界的时候，实现无缝衔接
+      oUl5.style.left=oUl5.offsetLeft+iSpeed+'px';
+//定义图片的右边距随着速度不断不断增加，或减小，实现运动的效果
+    }
+    timer1=setInterval(fnMove1,30);
+    oDiv1.onmouseover=function(){
+      clearInterval(timer1);
+//鼠标移动到图片上，清除定时器，停止运动
+    }
+    oDiv1.onmouseout=function(){
+      timer1=setInterval(fnMove1,30);
+//鼠标移出，重新开启定时器，重新运动
+    }
+    timer2=setInterval(fnMove2,30);
+    oDiv2.onmouseover=function(){
+      clearInterval(timer2);
+//鼠标移动到图片上，清除定时器，停止运动
+    }
+    oDiv2.onmouseout=function(){
+      timer2=setInterval(fnMove2,30);
+//鼠标移出，重新开启定时器，重新运动
+    }
+    timer3=setInterval(fnMove3,30);
+    oDiv3.onmouseover=function(){
+      clearInterval(timer3);
+//鼠标移动到图片上，清除定时器，停止运动
+    }
+    oDiv3.onmouseout=function(){
+      timer3=setInterval(fnMove3,30);
+//鼠标移出，重新开启定时器，重新运动
+    }
+    timer4=setInterval(fnMove4,30);
+    oDiv4.onmouseover=function(){
+      clearInterval(timer4);
+//鼠标移动到图片上，清除定时器，停止运动
+    }
+    oDiv4.onmouseout=function(){
+      timer4=setInterval(fnMove4,30);
+//鼠标移出，重新开启定时器，重新运动
+    }
+    timer5=setInterval(fnMove5,30);
+    oDiv5.onmouseover=function(){
+      clearInterval(timer5);
+//鼠标移动到图片上，清除定时器，停止运动
+    }
+    oDiv5.onmouseout=function(){
+      timer5=setInterval(fnMove5,30);
+//鼠标移出，重新开启定时器，重新运动
+    }
+  };
+</script>
+
+
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-lg-0">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">富源建材</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">Menu</span><i class="fas fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 active">公司简介 </a>
+              </li>
+              
+              <!-- <li class="nav-item"><a href="index_en.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">CN/EN </a>
+              </li> -->
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section style="background: url(img/jumbotron1.jpg)" class="py-5 bg-cover bg-center">
+      <div class="hero-overlay"></div>
+      <div class="container py-5 text-white text-center">
+        <h1 class="text-shadow hero-heading">富源建材（丁达尔墙板）</h1>
+        <p class="text-shadow lead my-4">一握富源手,永远是朋友</p><!-- <a href="#" class="btn btn-outline-light btn-sm">Learn More</a> -->
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div>
+              <img src="img/logo.png" height="150" width="150">
+          </div>
+
+          <!-- <div>
+            <h2 class="mb-4">企业介绍</h2>
+            <p class="lead">富源建材“丁达尔”竹炭纤维发泡护墙板是江苏首家引进最先进的室内装饰材料墙板生产线，意在提高室内环境健康指数，突破了以往墙面、吊顶用乳胶漆、大白，时间久长表面发霉、起皮、脱落等缺陷。工厂与中国建筑材料研究院共同开发出最新的室内环保墙面材料--“丁达尔”竹炭纤维发泡护墙板、木饰面板、碳晶板。同时涵盖覆膜定制，包括布纹系列、大理石系列、木纹系列、珠光系列、印金系列和单色系列。</p>
+          </div> -->
+          
+
+        </div>
+        <h2 class="mb-4">企业介绍</h2>
+            <p class="lead">富源建材“丁达尔”竹炭纤维发泡护墙板是江苏首家引进最先进的室内装饰材料墙板生产线，意在提高室内环境健康指数，突破了以往墙面、吊顶用乳胶漆、大白，时间久长表面发霉、起皮、脱落等缺陷。工厂与中国建筑材料研究院共同开发出最新的室内环保墙面材料--“丁达尔”竹炭纤维发泡护墙板、木饰面板、碳晶板。同时涵盖覆膜定制，包括布纹系列、大理石系列、木纹系列、珠光系列、印金系列和单色系列。</p>
+        
+      </div>
+    </section>
+    <section class="bg-gray py-5">
+      <div class="container py-5">
+        <hr></hr><hr></hr>
+        <h2 class="mb-4">布纹</h2>
+        
+        
+        <div class="row">
+          <div id="div1">
+            <ul id="imageList"></ul>
+          </div>
+        </div>
+
+        <script>
+          var numImages = 50;
+          var basePath = 'img/B/test';
+          var imageList = document.getElementById('imageList');
+
+          for (var i = 3; i <= numImages; i++) {
+            var imagePath = basePath + i + '.png';
+            var listItem = document.createElement('li');
+            var image = document.createElement('img');
+            image.src = imagePath;
+            listItem.appendChild(image);
+            imageList.appendChild(listItem);
+          }
+        </script>
+
+        <hr></hr><hr></hr>
+        <h2 class="mb-4">大理石</h2>
+        
+
+        <div class="row">
+          <div id="div2">
+            <ul id="imageList1"></ul>
+          </div>
+        </div>
+        <script>
+          var numImages = 110;
+          var basePath = 'img/L/test';
+          var imageList = document.getElementById('imageList1');
+
+          for (var i = 84; i <= numImages; i++) {
+            var imagePath = basePath + i + '.png';
+            var listItem = document.createElement('li');
+            var image = document.createElement('img');
+            image.src = imagePath;
+            listItem.appendChild(image);
+            imageList.appendChild(listItem);
+          }
+        </script>
+        <hr></hr><hr></hr>
+
+
+        <h2 class="mb-4">木纹</h2>
+        
+
+        <div class="row">
+          <div id="div3">
+            <ul id="imageList2"></ul>
+          </div>
+        </div>
+        <script>
+          var numImages = 83;
+          var basePath = 'img/M/test';
+          var imageList = document.getElementById('imageList2');
+
+          for (var i = 51; i <= numImages; i++) {
+            var imagePath = basePath + i + '.png';
+            var listItem = document.createElement('li');
+            var image = document.createElement('img');
+            image.src = imagePath;
+            listItem.appendChild(image);
+            imageList.appendChild(listItem);
+          }
+        </script>
+        <hr></hr><hr></hr>
+
+        <h2 class="mb-4">珠光</h2>
+        
+
+        <div class="row">
+          <div id="div4">
+            <ul id="imageList3"></ul>
+          </div>
+        </div>
+        <script>
+          var numImages = 135;
+          var basePath = 'img/Z/test';
+          var imageList = document.getElementById('imageList3');
+
+          for (var i = 111; i <= numImages; i++) {
+            var imagePath = basePath + i + '.png';
+            var listItem = document.createElement('li');
+            var image = document.createElement('img');
+            image.src = imagePath;
+            listItem.appendChild(image);
+            imageList.appendChild(listItem);
+          }
+        </script>
+        <hr></hr><hr></hr>
+
+        <h2 class="mb-4">印金/割金/单色</h2>
+        <div class="row">
+          <div id="div5">
+            <ul id="imageList4"></ul>
+          </div>
+        </div>
+        <script>
+          var numImages = 162;
+          var basePath = 'img/Other/test';
+          var imageList = document.getElementById('imageList4');
+
+          for (var i = 136; i <= numImages; i++) {
+            var imagePath = basePath + i + '.png';
+            var listItem = document.createElement('li');
+            var image = document.createElement('img');
+            image.src = imagePath;
+            listItem.appendChild(image);
+            imageList.appendChild(listItem);
+          }
+        </script>
+        <hr></hr><hr></hr>
+        
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer style="background: #eee;" class="pt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">关于我们</h5>
+            <h6>接受来样定制，为您提供最优质的服务。</h6>
+            <img src="img/code.png" style="width:200px;">  <!-- style="width:50px; height: 50px;" -->
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">地址/联系方式</h5>
+            <h6>江苏省连云港市</h6>
+            <p class="text-muted mb-0 text-small"> 江苏省连云港市赣榆区柘汪镇望海路18号</p>
+            <h6>电话</h6>
+            <p class="text-muted mb-0 text-small">+86 13675273976</p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="bg-dark py-4">    
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0">
+              <p class="small text-gray mb-0">&copy; 2024.weifeng network company</p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <p class="small text-gray mb-0"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  </body>
+</html>
